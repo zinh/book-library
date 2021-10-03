@@ -1,0 +1,16 @@
+{% extends 'base_generic.html' %}
+
+{% block title %}
+<title>Local library | Book list</title>
+{% endblock %}
+
+{% block content %}
+<h1>Books</h1>
+{% if book_list %}
+{% for book in book_list %}
+<p>
+{{ book.title }} | {{ book.author.first_name }} {{ book.author.last_name }}
+</p>
+{% endfor %}
+{% endif %}
+{% endblock %}

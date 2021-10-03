@@ -1,0 +1,11 @@
+{% extends 'base_generic.html' %}
+
+{% block title %}
+<title>Local library | {{ book.title }}</title>
+{% endblock %}
+
+{% block content %}
+<h1>{{ book.title }}</h1>
+<p>{{ book.author.first_name}} {{book.author.last_name}}</p>
+<p>{{ book.summary }}</p>
+{% endblock %}
