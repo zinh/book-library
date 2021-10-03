@@ -1,0 +1,17 @@
+{% extends 'base_generic.html' %}
+
+{% block title %}
+<title> Local library | Catalog index </title>
+{% endblock %}
+
+{% block content%}
+<h1>Local library index</h1>
+<div>
+  <h2>Statistics:</h2>
+  <ul>
+    <li><string>Title: </strong>{{ num_books }}</li>
+    <li><string>Books: </strong>{{ num_instances }}</li>
+    <li><string>Available books: </strong>{{ num_instance_available }}</li>
+  </ul>
+</div>
+{% endblock %}
